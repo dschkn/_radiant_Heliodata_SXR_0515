@@ -1,0 +1,14 @@
+{
+  "project": "_radiant_Heliodata_SXR_0515",
+  "dataset": "flare_events_2026-05-15_2026-07-15.json",
+  "event_count": 23,
+  "status": "curated prototype; non-exhaustive",
+  "primary_sources": [
+    "NASA CCMC DONKI",
+    "NASA Solar Dynamics Observatory / Solar Cycle 25",
+    "NOAA Space Weather Prediction Center",
+    "NOAA GOES-18 X-Ray Sensor"
+  ],
+  "time_standard": "UTC",
+  "copyright_notice": "Project code, documentation, mapping system, and composition: Copyright © 2026 Dmitrii Shchukin. All rights reserved. Scientific source data remains attributed to NASA and NOAA."
+}

@@ -1,0 +1,13 @@
+# Max/MSP local and backup files
+*.maxpat~
+*.maxhelp~
+*.maxproj~
+*.autosave
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Optional local API configuration
+.env
+data/nasa_donki_latest.json
