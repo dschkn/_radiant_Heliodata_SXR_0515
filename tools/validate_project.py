@@ -15,7 +15,7 @@ for item in patch.get("lines", []):
             errors.append("Patchline references missing object: " + endpoint)
 for ident, box in boxes.items():
     text = box.get("text", "")
-    if re.search(r"(^|\\s)(hip~|cross~)(\\s|$)", text):
+    if re.search(r"(^|\s)(hip~|cross~)(\s|$)", text):
         errors.append("Forbidden external/compatibility object in %s: %s" % (ident, text))
 if not any(box.get("maxclass") == "ezdac~" for box in boxes.values()):
     errors.append("No ezdac~ found")

@@ -23,7 +23,7 @@ The status strip must change from `INITIALISING DATA ENGINE...` to `READY`. If t
 ## Controls
 
 - **PLAY TIMELINE**: plays all events in chronological order.
-- **STOP**: stops the scheduler and closes the event envelope.
+- **STOP**: stops the scheduler and closes the current envelope.
 - **FOCUS**: renders the selected event with an extended envelope.
 - **TEST**: direct oscillator test independent of JavaScript and JSON.
 - **DURATION / MIN**: compressed timeline length.
@@ -39,7 +39,7 @@ The project deliberately separates three layers:
 2. The visible Max signal graph performs all synthesis, filtering, envelope generation, panning, delay, metering, and output.
 3. The **TEST** path is wired directly to `ezdac~`, allowing audio configuration to be checked even if the control engine fails.
 
-The rebuild removes the former `hip~` compatibility abstraction and `live.gain~`. The signal path now uses only standard Max/MSP objects and a plain smoothed linear master gain.
+The rebuild removes the former `hip~` compatibility abstraction and `live.gain~`. The signal path now uses only standard Max/MSP objects and a plain linear master gain.
 
 ## Validation
 
